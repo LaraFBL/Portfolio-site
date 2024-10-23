@@ -2,8 +2,6 @@
     --Purple: #FF1493;
 }
 
-
-
 ul li{
     float: left;
     width: 100px;
@@ -28,13 +26,17 @@ b{
 }
 
 body{
-    background: linear-gradient(rgba(0,0,0,0.78),rgba(0,0,0,0.78),rgba(0,0,0,0.68),rgba(0,0,0,0)), url(pixelcut-export.jpeg)no-repeat;
+    overflow-x: hidden; /* Impede a rolagem horizontal */
+    background: linear-gradient(rgba(0,0,0,0.78),rgba(0,0,0,0.68),rgba(0,0,0,0.48),rgba(0,0,0,0)), url(pixelcut-export.jpeg)no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
     height: 100vh;
     margin: 0;
+    padding: 0;
 }
+
+
 
 .textbox{
     float: right;
@@ -79,7 +81,7 @@ img{
 
 .text{
     position: absolute;
-    left: 21%;
+    left: 28%;
     top: 50%;
     margin: -1px 0px;
 }
@@ -96,7 +98,7 @@ h2{
     font-family: "Poppins", sans-serif;
     font-weight: normal;
     font-size: 14px;
-    opacity: 0.3;
+    opacity: 0.7;
     margin-top: -20px;
 }
 
@@ -269,4 +271,184 @@ input[type="submit"]:hover{
 
 span{
     color: white;
+}
+
+section {
+    margin-bottom: 20px; /* Altere o valor conforme necessário */
+    transition: background-color 0.5s ease, padding 0.5s ease;
+}
+
+
+
+.home{
+    margin-bottom: 535px;
+}
+
+.home::after {
+    content: ""; /* Pseudo-elemento para o gradiente */
+    position: absolute;
+    bottom: 0; /* Posiciona na parte inferior */
+    left: 0;
+    width: 100%; /* Largura total */
+    height: 100px; /* Altura do gradiente */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.95)); /* Gradiente */
+    z-index: 1; /* Coloca acima do fundo da seção */
+}
+
+.about {
+    position: relative; /* Para posicionar o overlay corretamente */
+    background-image: linear-gradient(rgba(0,0,0,0.95),rgba(0,0,0,0.69),rgba(0,0,0,0.48),rgba(0,0,0,0)), url(upscaler-background-2-2x.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 450px 0; /* Ajuste conforme necessário */
+    color: white; /* Para garantir que o texto seja visível */
+}
+
+.about::after {
+    content: ""; /* Pseudo-elemento para o gradiente */
+    position: absolute;
+    bottom: 0; /* Posiciona na parte inferior */
+    left: 0;
+    width: 100%; /* Largura total */
+    height: 100px; /* Altura do gradiente */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.95)); /* Gradiente */
+    z-index: 1; /* Coloca acima do fundo da seção */
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 41px; /* Espaçamento entre as seções */
+}
+
+.text-about h1{
+    font-family: "Poppins", sans-serif;
+    font-size: 45px;
+    font-weight: bolder;
+    text-align: center;
+    margin: -330px;
+}
+
+.cover2{
+    border: 1px solid black;
+    text-align: center;
+    width: 300px;
+    height: 450px;
+    position: absolute;
+    left: 20%;
+    top: 30%;
+    border-radius: 8px;
+}
+
+.subcover2{
+    border-bottom: 1px solid none;
+    background: black;
+    width: 300px;
+    height: 550px;
+    opacity: 0.7;
+    border-radius: 8px;
+}
+
+.text2{
+    position: absolute;
+    left: 2%;
+    top: 50%;
+    margin: -1px 0px;
+}
+
+.cover3{
+    border: 1px solid black;
+    text-align: center;
+    width: 300px;
+    height: 550px;
+    position: relative;
+    left: 160%;
+    top: -123%;
+    border-radius: 8px;
+}
+
+.cover3 img{
+    top: 8.2%;
+}
+
+.subcover3{
+    border-bottom: 1px solid none;
+    background: black;
+    width: 300px;
+    height: 550px;
+    opacity: 0.7;
+    border-radius: 8px;
+}
+
+.text3{
+    position: absolute;
+    left: 2%;
+    top: 41%;
+    margin: -1px 0px;
+}
+
+.premios{
+    position: relative; /* Para posicionar o overlay corretamente */
+    background-image: linear-gradient(rgba(0,0,0,0.95),rgba(0,0,0,0.69),rgba(0,0,0,0.48),rgba(0,0,0,0)), url(night.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: -62px;
+    padding: 420px 0; /* Ajuste conforme necessário */
+    color: white; /* Para garantir que o texto seja visível */
+}
+
+.premios::after {
+    content: ""; /* Pseudo-elemento para o gradiente */
+    position: absolute;
+    bottom: 0; /* Posiciona na parte inferior */
+    left: 0;
+    width: 100%; /* Largura total */
+    height: 100px; /* Altura do gradiente */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.95)); /* Gradiente */
+    z-index: 1; /* Coloca acima do fundo da seção */
+}
+
+.text-premios h1{
+    font-family: "Poppins", sans-serif;
+    font-size: 45px;
+    font-weight: bolder;
+    text-align: center;
+    margin: -300px;
+}
+
+.cover4{
+    border: 1px solid black;
+    text-align: center;
+    width: 1080px;
+    height: 450px;
+    position: absolute;
+    left: 10%;
+    top: 30%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 16px 7px;
+    opacity: 0.7;
+}
+
+.subcover4{
+    border-bottom: 1px solid none;
+    background: black;
+    width: 1080px;
+    height: 450px;
+    opacity: 0.7;
+    border-radius: 8px;
+}
+
+.text4{
+    position: absolute;
+    text-align: center;
+    width: 50%;
+    left: 24%;
+    top: 10%;
+    margin: -1px 0px;
+}
+
+.text4 h2{
+    font-size: 19.2px;
+    opacity: 50;
 }
